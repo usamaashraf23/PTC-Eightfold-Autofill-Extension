@@ -1,0 +1,28 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phone": "5551234567",
+  "linkedinUrl": "https://www.linkedin.com/in/johndoe",
+  "currentAddress": {
+    "street": "123 Main Street",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States",
+    "zipCode": "94101"
+  },
+  "education": [
+    {
+      "school": "University of Example",
+      "degree": "Bachelor of Science in Computer Science",
+      "year": "2020"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Tech Corp",
+      "position": "Software Engineer",
+      "duration": "2020-Present"
+    }
+  ]
+}

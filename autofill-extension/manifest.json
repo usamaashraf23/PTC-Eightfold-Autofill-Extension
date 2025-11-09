@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "PTC Eightfold AI Autofill",
+  "version": "1.0",
+  "description": "Auto-fill PTC job applications on Eightfold AI platform",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://ptc.eightfold.ai/*"],
+  "action": {
+    "default_title": "Fill PTC Application",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ptc.eightfold.ai/careers/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["test-data.json"],
+      "matches": ["https://ptc.eightfold.ai/*"]
+    }
+  ]
+}
